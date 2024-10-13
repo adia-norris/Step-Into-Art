@@ -1,6 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import { reactive, ref } from "vue";
+
+
+
+
 </script>
 
 <template>
@@ -8,6 +12,9 @@ import { reactive, ref } from "vue";
 <p>pin 1</p>
 <p>pin 2</p>
 <p>pin 3</p>
+<p>pin 4</p>
+
+<p>Spotify Playlists: {{ playlist }}</p>
 
     </template>
    

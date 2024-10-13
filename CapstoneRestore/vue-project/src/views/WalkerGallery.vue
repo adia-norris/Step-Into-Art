@@ -19,6 +19,8 @@ import { reactive, ref } from "vue";
 <p>Questions or Comments </p>
 <p>Contribute to our art walk knowledge by posting the pic on IG with the hashtag #LouArtWalk and letting us know </p>
 
+<iframe src='https://widgets.sociablekit.com/instagram-hashtag-feed/iframe/25473814' frameborder='0' width='100%' height='1000'></iframe>
+
 <img src="https://images.squarespace-cdn.com/content/v1/61df36f8cd2d055a32b57c9a/2b5f5c07-f087-45fd-a776-d37c1aa5a459/Screen+Shot+2022-01-14+at+3.46.43+PM.png" alt="">
 <img src="https://www.edhamiltonstudios.com/uploads/1/0/5/3/10532710/dad-and-lincoln-web_orig.png" alt="">
 <img src="https://bloximages.newyork1.vip.townnews.com/wdrb.com/content/tncms/assets/v3/editorial/2/03/203a42da-22ac-11ef-905c-afcf5251e79d/665f70be365c8.image.jpg?resize=666%2C500" alt="">

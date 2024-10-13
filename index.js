@@ -1,4 +1,4 @@
-// require('dotenv').config()
+require('dotenv').config()
 
 const bodyParser = require('body-parser')
 let express = require('express')
@@ -41,7 +41,7 @@ console.log(error)
 }
 })
 
-app.get('/contactus', async (req, res) => {
+app.get('/gallery', async (req, res) => {
     try {
         const data = await Model.find()
         res.send(data)
@@ -51,7 +51,7 @@ app.get('/contactus', async (req, res) => {
     })
 
 
-app.post('/contactus', async (req, res) => {
+app.post('/gallery', async (req, res) => {
 let firstName = req.body.firstName
 let lastName = req.body.lastName
 let email = req.body.email
@@ -72,35 +72,4 @@ try {
 console.log(error)
 }
 })
-
-// app.get('/books/:id', async(req, res) => {
-//     const id = req.params.id
-
-// try {
-//     const data = await Model.findById(id)
-//     res.send(data)
-// } catch {
-//     console.log(error)
-// }
-// })
-// app.delete('/books/:id', async(req,res) => {
-//     const id = req.params.id
-//     try {
-// const data = await Model.findByIdAndDelete(id)
-// res.send(data)
-//     } catch (error) {
-// console.log(error)
-//     }
-// })
-
-// app.put ('/books/:id', async(req, res) => {
-//     const id = req.params.id
-//     const updatedData = req.body
-//     try {
-// const data = await Model.findByIdAndUpdate(id, updatedData)
-// res.send(data)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
     app.listen(3000)

@@ -13,7 +13,7 @@ import { reactive, ref } from "vue";
 </div>
 
 
-<p class="usText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ipsum molestias ratione adipisci soluta, quam placeat ad ipsam ab. Quasi, sit!
+<p class="usText"> Louisville's art scene is vibrant and an organic part of daily living. 
 </p>
 </div>
 </template>
