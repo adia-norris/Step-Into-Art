@@ -25,18 +25,52 @@ import contactUs from "./components/contactUs.vue"
 <RouterView />
 
 <div class="try">
-  <img class="side-banner" src="../src/assets/Capstone Assets/long-banner.png" alt="">
-  <img class="reg-banner" src="../src/assets/Capstone Assets/reg-banner.png" alt="">
+
+  <img class="side-banner" src="../src/assets/Capstone Assets/long-banner.png" alt="footprint banner">
+  <h1>OK.</h1>
+  <p>We all know that walking is a great way to sustain healthy living: It improves our mood by decreasing anxiety and depression, aids in concentration, increases energy and stamina, supports our overall physical health and gives us a better night's sleep. </p>
+  <img class="man-art" src="../src/assets/Capstone Assets/man-art.png" alt="man in a color cloud">    
+  <p>Art helps us to cope with pain and distress, along with reducing the risk of developing mental illness.</p>
+  <h3>Why not have both?</h3>
+  <img class="reg-banner" src="../src/assets/Capstone Assets/reg-banner.png" alt="image reading: artful steps">
+  <h1 class="capstone-title">Welcome to Artful Steps: Creating Cultural Pathways for Wellness</h1>
+<br>
+<div class="writing-container">
+<br>
+
+
+<p>"Walking among art is a journey of the soul; each step nourishes the mind, emboldens the heart and strengthens the body."</p>
+</div>
 </div>
 
+
 <div class="footer">
+  <div class="music-container">
+    <h3 class="vibe">Currently vibing to</h3>
+    <iframe class="youtube" width="112" height="63" src="https://www.youtube.com/embed/vVKbeUs0a_A?si=6nudbY4UslnwMSh5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3 class="artist">Samara Joy</h3>
+    <h3 class="song">You Stepped Out of a Dream</h3>
+  </div>
+<div class="stopby-container">
+ <h3>Thanks for stopping by!</h3>
+ <br>
 <img class= "footer-banner" src="../src/assets/Capstone Assets/contactus.png" alt="footer">
 <!-- <button @click="contactUs">Contact Us</button> -->
+</div>
+
+<div class="contact-container">
+  <img class="selfie" src="" alt="">
+<a class="ig" href="https://www.instagram.com/shuddupadia">Instagram</a>
+<a class="li" href="https://www.linkedin.com/in/adianorris">LinkedIn</a>
+<a class="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=adiajo.norris@gmail.com&su=re%3A%20Artful%20Steps">Email</a>
+
+</div>
+
 </div>
 </body>
 </template>
 
-<style scoped>
+<style>
 
 body {
   background-color: antiquewhite;
@@ -71,13 +105,20 @@ height: 700px;
 width: 100px;
 display: flex;
 flex-direction: row;
-justify-items: flex-end;
-background-color: antiquewhite;
 }
-
+.man-art {
+  height: 200px;
+}
 .reg-banner {
   height: 200px;
-  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content:flex-end;
+  justify-content: right;
+  justify-items: right;
+  border-radius: 2%;
+ 
 }
 
 .button:hover {
@@ -87,12 +128,6 @@ background-color: antiquewhite;
   transition: background-color 0.3s, transform 0.2s;
 }
 
-
-.banner {
-  height: 100px;
-  padding-top: 50px;
- 
-}
 
 nav {
   color: black;
@@ -108,24 +143,111 @@ nav {
   height: 75px;
   width: 75px;
   border-radius: 50px;
-  padding-left: -80px;
   margin-left: 150px;
   margin-right: 150px;
 }
 
-.footer {
-  height: 100px;
+.writing-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(82, 20, 3);
- 
 }
-.footer-banner {
-  height: 30%;
-  width: 20%;
-  padding-top: 30px;
+.capstone-title {
   display: flex;
-  padding-left: 500px;
+  flex-direction: row;
+justify-content: center;
 }
 
+.mainImage {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.music-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items:center;
+  align-content: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 50px;
+  margin-top: -10px;
+  width: 500px;
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(82, 20, 3);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+
+}
+
+.vibe {
+margin-top: 15px;
+
+}
+.artist{
+  line-height: .25;
+
+} .song {
+  line-height: .2;
+  margin-top: -2px;
+}
+
+.youtube {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.footer-banner {
+  height: 70%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  padding-top: -8px;
+}
+
+.stopby-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+
+}
+
+.contact-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  margin-right: 150px;
+  color: white;
+}
+
+.ig, .li, .email {
+  color: white;
+  line-height: 3;
+  font-size: large;
+  font-weight: bold;
+}
 </style>
